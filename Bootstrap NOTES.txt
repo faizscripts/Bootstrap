@@ -1,1 +1,79 @@
 aim to modify your page e.g not using all the defaults like color and fonts in order to have a personal touch
+
+
+container wraps our content and enables it to use the bootstrap grid
+
+
+buttons were designed to work with button tags but they can work with a and input tags as well
+
+
+
+///         TYPOGRAPHY          ///
+
+other than the normal heading tags, you can include h1 etc as a class to give the item h1 properties
+
+
+there exist a small tag which makes the text small. you can use it together with the class text-muted to create fancy headings
+
+
+
+display-1 to display-4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
