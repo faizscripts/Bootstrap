@@ -17,7 +17,17 @@ there exist a small tag which makes the text small. you can use it together with
 
 
 
-display-1 to display-4
+-display-1 to display-4
+a larger slightly more opinionated heading. also works in other tags
+
+
+-lead
+makes a paragraph stand out more font size and weight
+
+
+-inline text elements
+mark- highlights text
+del/ s-    strikethrough
 
 
 
@@ -27,6 +37,120 @@ display-1 to display-4
 
 
 
+
+///         BREAKPOINTS         ///
+
+
+xs  -   <=576px
+sm  -   >=576px
+md  -   >=768px
+lg  -   >=992px
+xl  -   >=1200px
+xxl -   >=1400px
+
+
+/// DISPLAY ATTRIBUTE           ///
+this can be used by the display property to hide items
+
+
+there are 2 ways of using it
+
+1.  d-{value}
+this is for xs i.e it applies to xs and above
+where value can be none, inline, flex etc
+
+
+2.  d-{breakpoint}-{value}
+this applies to sm, md, lg and xl as xs is catered for in number 1
+breakpoint is the breakpoint value
+
+
+
+~ d-none d-sm-block
+hide something on xs
+
+
+a meter used to show the current screen size
+    <div class="container">
+        <h2>Current breakpoint is:
+            <span class="d-inline d-sm-none text-danger">XS</span>
+            <span class="d-none d-sm-inline d-md-none text-warning">SM</span>
+            <span class="d-none d-md-inline d-lg-none text-success">MD</span>
+            <span class="d-none d-lg-inline d-xl-none text-info">LG</span>
+            <span class="d-none d-xl-inline text-primary">XL</span>
+        </h2>
+    </div>
+
+
+
+
+
+
+
+
+
+/// BORDERS and SHADOWS        ///
+
+
+border          - border around
+border-right    - border on right only
+border-top-0    - border all round minus top
+border border-primary   -   blue border
+border rounded  - rounded edges
+border rounded-circle   - circle
+
+
+
+shadow-none
+shadow-sm
+shadow          - regular
+shadow-lg
+
+
+
+
+
+
+
+
+
+///     MARGIN & PADDING            ///
+
+
+
+property-sides-size for xs
+property/sides-breakpoint-size for the rest
+
+
+
+property
+m       - margin
+p       - padding
+
+
+sides
+t       - top
+b       - bottom
+l       - left
+r       - right
+x       - left and right
+y       - top and bottom
+(blank) - all round
+
+
+size
+0       - no m/ p
+1       - 0.25 rem
+2       - 0.5 rem
+auto    - auto
+
+px-5    - padding left and right is 5 = 3rems
+
+we can also use this at responsive breakpoints say you have a grid and you want the margin/ padding to change according to the screen size
+
+
+
+m-2 m-md-3 m-lg-4 m-xl-5
 
 
 
