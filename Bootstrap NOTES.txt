@@ -1,3 +1,17 @@
+//?????? QUESTION ?????? how do you set up the bootstrap grid
+//?????? QUESTION ?????? how do you give heading properties in a p tag
+//?????? QUESTION ?????? which class is used to give more opinionated headings
+//?????? QUESTION ?????? which class is used to make a paragraph stand out from the other paragraphs
+//?????? QUESTION ?????? class for highlighting some text
+
+
+
+
+
+
+
+
+
 aim to modify your page e.g not using all the defaults like color and fonts in order to have a personal touch
 
 
@@ -28,6 +42,16 @@ makes a paragraph stand out more font size and weight
 -inline text elements
 mark- highlights text
 del/ s-    strikethrough
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,6 +113,33 @@ a meter used to show the current screen size
 
 
 
+
+
+
+
+
+//?????? QUESTION ?????? border around
+//?????? QUESTION ?????? border at the right only
+//?????? QUESTION ?????? border all round minus top
+//?????? QUESTION ?????? blue border
+//?????? QUESTION ?????? border with rounded edges
+//?????? QUESTION ?????? a circle border
+//?????? QUESTION ?????? list the 4 shadow attributes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /// BORDERS and SHADOWS        ///
 
 
@@ -114,12 +165,36 @@ shadow-lg
 
 
 
+
+
+
+
+//?????? QUESTION ?????? padding of 3 all round
+//?????? QUESTION ?????? top and bottom margin of 5
+//?????? QUESTION ?????? the default margin should be 2, when the screen gets to medium the padding should be 3, lg 4 and xl 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ///     MARGIN & PADDING            ///
 
 
 
-property-sides-size for xs
-property/sides-breakpoint-size for the rest
+property-sides-size for xs      -   mt-5, p-3
+property/sides-breakpoint-size for the rest    - p-sm-4, mt-lg-1
 
 
 
@@ -146,11 +221,415 @@ auto    - auto
 
 px-5    - padding left and right is 5 = 3rems
 
+
+
+
 we can also use this at responsive breakpoints say you have a grid and you want the margin/ padding to change according to the screen size
 
-
-
 m-2 m-md-3 m-lg-4 m-xl-5
+
+m2 is the normal margin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? what give an input tag form properties
+//?????? QUESTION ?????? create a form with a large input for email, range, file selecting and a submit button
+
+
+
+
+
+
+
+
+
+
+
+
+///         FORM CONTROLS & FORM GROUP          ///
+
+
+
+
+.form-control is the class used to give bootstrap  form properties to an input
+
+
+    <form>
+        <label for="email">Email</label>
+        <input id="email" type="email" class="form-control" placeholder="Enter your email">
+    </form>
+
+
+the for attribute in the label tag helps us to link it with the input tag if the for value is equal to the input tag's id
+
+
+
+.form-group is the easiest way to add some structure to forms.
+
+it's used to group say input tag pairs with their labels
+
+
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" type="password" class="form-control" placeholder="Password">
+        </div>
+    </form>
+
+
+
+
+
+you can also use form control for different sizes
+
+.form-control-lg
+
+.form control-sm
+
+
+theres also a special form control for file and range to give it better styling
+
+.form-control-file
+
+.form-control-range
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? create an inline radio which asks for your gender. Note a radio should only be able to select one item
+
+
+
+
+
+
+
+
+
+
+
+
+/// CHECKBOXES AND RADIO BUTTONS            ///
+
+
+
+use a special class called form-check for each individual checkbox or radio
+
+
+.form-check-input       - each input
+
+.form-check-label       - each label
+
+
+    <form >
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="male">
+            <label for="male">Male</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="female" disabled>
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" class="form-radio-input" id="radio">
+            <label for="radio">Radio</label>
+
+        </div>
+    </form>
+
+
+
+for radios, they should have the same name so that you can only select one from the list
+
+
+
+<div class="form-check form-check-inline"></div>
+
+an inline form check
+
+
+
+
+
+
+///         CUSTOM INPUTS           ///
+
+you can have a custom checkbox, radio button, file input and range instead of the default one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? create an input tag for username and password. they should have icons attached to the input tags
+
+
+
+
+
+
+
+
+
+
+
+///         INPUT GROUPS AND ICONS          ///
+
+
+
+ this is a way of adding things to our input tags
+
+.input-group                - to wrap the input group
+
+.input-group-prepend        - add something at the beginning
+
+.input-group-append         - add something at the end
+
+
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </div>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? create an inline form with username, password and a submit button
+
+
+
+
+
+///         INLINE FORMS            ///
+
+
+
+
+.form-inline
+on the form tag makes it an inline element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? use the following nav to answer
+        <nav >
+             <a href="#" >Some link </a>
+             <a href="#" >Some link </a>
+             <a href="#" >Some link </a>
+             <a href="#" >Some link </a>
+        </nav>
+//?????? QUESTION ?????? create a nav which is a column in xs but turns to row at md
+//?????? QUESTION ?????? create a nav where the links are arranged at the end
+//?????? QUESTION ?????? create a nav which take up the remaining space equally
+
+
+
+
+
+
+
+
+
+
+
+///         NAVS & FLEXBOX          ///
+
+this is different from navbar which are simply used for navigation and not necessarily at the top
+
+navs automatically get assigned display flex
+
+
+    <nav class="nav flex-column flex-md-row">
+        <a href="#" class="nav-link active"></a>
+        <a href="#" class="nav-link"></a>
+        <a href="#" class="nav-link"></a>
+        <a href="#" class="nav-link disabled"></a>
+    </nav>
+
+
+        <nav class="nav justify-content-end">
+            <a href="#" class="nav-link active"></a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link disabled"></a>
+        </nav>
+
+
+
+        <nav class="nav nav-pill nav-justified">
+            <a href="#" class="nav-link active"></a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link"></a>
+            <a href="#" class="nav-link disabled"></a>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+///         NAVBARS         ///
+
+
+.navbar-light            - dark text
+
+
+.navbar-dark             - light text
+
+
+
+Always collapsed navbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,33 +7,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
 
     <title>Forms Exercise</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center display-2">Part 1</h1>
-        <!-- Write your first form here -->
-    </div>
+<div class="container">
+    <h1 class="text-center display-2">Part 1</h1>
+    <!-- Write your first form here -->
+
+    <h4>Billing Address</h4>
+
+    <form>
+
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" class="form-control" id="full-name">
+        </div>
+
+        <div class="form-group">
+            <label for="basic-addon1">Username</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+        </div>
 
 
-    <h1 class="text-center display-2">Part 2</h1>
-    <div class="container border rounded" style="max-width: 400px;">
-       Write your second form here (and delete this line!)
-    </div>
+        <div class="form-group">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" placeholder="you@example.com" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="address"> Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Market St.">
+        </div>
+
+        <div class="form-group">
+            <label for="address2"> Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or Suite">
+        </div>
+
+        <div class="form-group">
+            <label for="special">Special Notes <span class="text-muted">(Optional)</span></label>
+            <textarea name="special" id="special" cols="30" rows="7" class="form-control"></textarea>
+            <small>Include any special requests you have for us!</small>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="add" name="extra">
+            <label for="add" class="form-check-label"> Shipping Address is same as billing</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save" name="extra">
+            <label for="save" class="form-check-label"> Save my info for next time</label>
+        </div>
+
+        <hr>
+
+        <h4>Shipping Options</h4>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same" name="options">
+            <label for="same" class="form-check-label">Same day of shipping</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="next" name="options">
+            <label for="next" class="form-check-label">Next day of shipping</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="more" name="options">
+            <label for="more" class="form-check-label">3-5 Business Days</label>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block mt-2"> Proceed to checkout</button>
 
 
+    </form>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
+</div>
+
+
+<h1 class="text-center display-2">Part 2</h1>
+<div class="container border rounded" style="max-width: 400px;">
+    <h4 class="text-center pt-5 pb-2">Sign In</h4>
+
+    <form>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="sign">
+            <label for="sign" class="form-check-label">Remember Me</label>
+        </div>
+        <button class="btn btn-info btn-block mt-3">Sign In</button>
+        <p class="text-center mt-2 pb-5">Not a member? <span class=" text-info">Register</span></p>
+    </form>
+
+</div>
+<div class="pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque exercitationem itaque iure iusto laborum nesciunt qui similique totam voluptas.</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
 
