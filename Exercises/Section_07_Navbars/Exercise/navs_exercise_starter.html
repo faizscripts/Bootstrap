@@ -14,6 +14,10 @@
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
           crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
 
     <title>Navs Exercise Starter</title>
 </head>
@@ -21,7 +25,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"><i class="fas fa-paw"></i> My Pets</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,33 +34,56 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Dogs <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <a class="nav-link" href="#">Cats</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="#">Rabbits</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline mt-2">
+            <div class="input-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    </div>
+                    <input type="text" class="form-control">
+
+                    <div class="input-group-append"><button class="btn btn-success">Search</button></div>
+                </div>
+            </div>
+
         </form>
     </div>
 </nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container ">
+        <h1 class="display-4">Hey There</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus deserunt dignissimos dolorem eos exercitationem id illo itaque, maxime minus nisi obcaecati omnis, qui, quibusdam quo repellat unde. Magni, totam.</p>
+        <button class="btn btn-success">Learn More <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<div class="container border">
+        <ul class="nav nav-pills d-flex p-2 flex-column flex-sm-row">
+            <li class="nav-item flex-fill">
+                <a class="nav-link active" href="#">Dogs</a>
+            </li>
+            <li class="nav-item flex-fill">
+                <a class="nav-link" href="#">Cats</a>
+            </li>
+            <li class="nav-item flex-fill">
+                <a class="nav-link disabled" href="#">Rabbits</a>
+            </li>
+        </ul>
+        <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, at commodi consequatur, enim et, explicabo hic
+            illum incidunt iusto libero nam quas quis reiciendis sit suscipit. Deleniti nemo nesciunt quas.</p>
+</div>
 
 
 <!-- Optional JavaScript -->

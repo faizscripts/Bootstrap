@@ -586,6 +586,109 @@ Always collapsed navbar
 
 
 
+///         BOOTSTRAP GRID          ///
+
+
+
+in order to use the bg, you need to place everything inside a container whether its a normal container or container-fluid
+
+
+within the container, we will look up at 2 more classes
+
+1. row - for content which goes across the container then you can divide it using columns
+
+
+each row has 12 units of space and we can specify the space for each column
+
+the default without specifying the width is that the columns are divided equally
+
+
+in order to make a responsive layout design, we will have to focus on the small sizes
+
+
+NOTE: there is no col-xs-12, the default is already xs i.e col-12
+
+
+this means we can do the responsive styling sm upwards and the columns will be stacked by default in the xs screen
+
+
+
+
+
+
+
+
+
+
+
+
+
+///         GRID ALIGNMENT          ///
+
+
+it uses similar classes of alignment like flexbox
+
+
+the default for aligning items vertically is stretch where all the columns in the will take the height of the largest column
+
+
+the default for horizonal alignment is justify-content-start
+
+
+
+
+
+///         OFFSET AND NESTING          ///
+
+
+sometimes you may have content that doesn't do all the way across and you may want something that doesn't start at the beginning
+
+offset-md-1
+this is also responsive and means the offset will go away below md
+
+
+
+we can also nest grids i.e inside a column you can add another row
+
+
+
+
+
+
+///         FORM AND GRID           ///
+
+
+
+there is a special class called form-row which is used when styling forms using the grid system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
