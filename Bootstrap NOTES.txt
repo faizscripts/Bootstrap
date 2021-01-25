@@ -868,6 +868,386 @@ you can also change the color e.g bg-success
 
 
 
+///         JAVASCRIPT COMPONENTS           ///
+
+
+you need to have the bootstrap JS component included
+
+
+often we would also need to add some special attributes to our elements
+
+
+
+
+
+
+
+
+
+///             ALERT           ///
+
+
+
+a pop up that shows a message to the user
+
+
+this can work without JS although it will just be a simple pop up
+
+
+
+when we use it with JS it gives it extra features like dismissing the alert
+
+
+
+
+.alert
+.alert-primary
+.alert-link
+.alert-heading
+
+
+
+
+to make it dismissible, there's a couple of things we have to do
+.alert-dismissible
+
+we will then add a button and give it a class of close and will give it an attribute called data-dismiss="alert"
+
+we will then use a html entity code for the X symbol
+&times;
+
+
+we can the class fade and show to the parent class to make it have the fade effect when clicked
+
+
+
+
+
+
+
+///         TOOLTIPS            ///
+
+
+tooltips give you extra information about something when you hover over them
+
+
+this are similar to popover however for popover you have to click and they don't go away after the hover
+
+
+
+data-toggle="tooltip"
+
+data-placement="top"
+
+title="some tooltip"
+
+
+we will then copy the js optimization code from the docs and we should paste them below our js script
+
+
+<script>code</script>
+
+
+
+
+
+
+
+in the case where you want custom html in the tooltip, add the html in your tooltip title then add the following attribute
+
+data-html="true"
+
+
+
+
+
+
+
+
+///         POPOVERS            ///
+
+
+
+similar to tooltips except that they're triggered by a click, have a title and a different kind of formatting
+
+
+
+like tooltips, you also have to include the js code
+
+
+
+add the following attributes
+
+
+
+data-toggle="popover"
+
+title="some popover"        //heading for the popover
+
+data-content= "content for the popover"
+
+data-placement= "bottom"
+
+
+
+
+
+
+
+
+///         DROPDOWN            ///
+
+
+div with a class dropdown
+
+
+a button for opening the dropdown with a class dropdown-toggle
+data-toggle= "dropdown"
+
+
+a div with a class of  dropdown menu
+
+
+
+you can add other contents like a dropdown header, divider
+
+
+
+
+
+
+
+
+
+
+///         COLLAPSE AND ACCORDIONS         ///
+
+
+data-toggle= "collapse"
+
+
+give the item that we want to collapse a class of collapse
+
+
+
+then link the 2 using an id. in the case where we're using an a tag as our collapse button, we'll set the href to be the id of our collapse item.
+
+
+in the case where we're using a button as our collapse button, use data-target
+
+
+
+you can also use multiple targets and we'll give our parent div the class multi-collapse
+
+
+
+an accordion is similar to multi collapse however only one item can open at a time
+
+
+
+
+
+
+
+///         MODALS          ///
+
+
+a modal is a popup for notifications e.g to remind users to save their work
+
+
+.modal
+.fade
+tabindex="-1"           //wont be accessible by tag because it will be hidden
+
+
+
+
+
+
+
+
+
+///         SCROLLSPY           ///
+
+connects content that you can scroll through to navigation elements
+
+
+e.g a single page site which the nav shows the place you are at when scrolling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///         CAROUSELS           ///
+
+
+
+.carousel
+.slide  /   .fade           //effect
+
+data-ride="carousel"
+
+
+you have to add the active style to one of the images otherwise the carousel will not display
+
+
+by default it transitions after every 5 seconds
+
+data-interval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
