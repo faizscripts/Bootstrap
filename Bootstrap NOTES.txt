@@ -824,6 +824,26 @@ you can also use pill edges which makes the badges rounded
 
 
 
+///         PROGRESS BAR            ///
+
+
+
+used to show some meter or level or something
+
+
+
+.progress   - entire range
+.progress-bar - length
+
+you can also use a label
+
+you can also change the color e.g bg-success
+
+.progress-bar-stripped
+
+.progress-bar-animated
+
+
 
 
 
