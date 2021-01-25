@@ -681,6 +681,21 @@ there is a special class called form-row which is used when styling forms using 
 
 
 
+///         LIST GROUPS         ///
+
+
+list view is a way of displaying a series of content
+
+
+the easiest way is creating ul with the class list-group and li with the class list-group-item
+
+
+if you want actionable list items use the class list-group-item-action on top of the list-group-item
+
+
+
+.list-group-flush
+minimalistic lines
 
 
 
@@ -694,6 +709,22 @@ there is a special class called form-row which is used when styling forms using 
 
 
 
+///         CARDS               ///
+
+
+a div with the class card
+
+inside it a div with the class card body
+
+
+it automatically gives a border
+
+
+you can use cards with images in 3 ways
+1. card-img-top         image above text
+2. card-img-bottom      image below text
+3. card-img then add a div with card-img-overlay instead of card-body
+   image overlay i.e text above image
 
 
 
@@ -705,6 +736,90 @@ there is a special class called form-row which is used when styling forms using 
 
 
 
+
+
+you can use the bootstrap grid to arrange cards. However there's also a built in class to arrange cards
+
+
+however, at the moment card layouts are not entirely responsive
+
+
+.card-group
+    .card
+
+
+.card-deck
+    .card
+you can also use card deck instead of card group with the difference being that the cards aren't attached
+
+
+
+.card-columns
+give the masonry style which places elements in optimal positions based on available vertical space
+
+for card columns you can use css to specify the number of columns you want
+
+
+
+
+
+
+
+
+///         BADGES          ///
+
+
+often used for counting notifications
+
+h3
+    span   .badge .badge-primary
+
+
+
+you can also use it inside a button
+
+button
+    span    .badge badge-light
+
+
+
+you can also use pill edges which makes the badges rounded
+
+
+
+
+
+
+///         BREADCRUMBS         ///
+
+ indicates the current page location within a navigational hierarchy that automatically adds separators via css
+
+
+ like the file explorer in windows
+
+ home  /  library  /  data
+
+
+
+
+ ///            BUTTON GROUP            ///
+
+ group of bootstrap button combined to a single line
+
+
+ .btn-group     .btn
+
+
+
+
+
+
+
+ ///            PAGINATION          ///
+
+
+
+ used for page navigation
 
 
 
