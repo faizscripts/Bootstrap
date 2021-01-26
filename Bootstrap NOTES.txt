@@ -1113,7 +1113,47 @@ data-interval
 
 
 
+///         CUSTOMIZING BOOTSTRAP           ///
 
+
+we're going to use sass for our customization
+
+
+to do this we're going to need bootstrap source files which are the raw bootstrap files different from cdn boostrap and the compiled bootstrap
+
+
+
+after downloading, the files that we care about are the bootstrap scss files
+
+
+the normal flow of processes is that bootstrap.scss includes all the bootstrap code. this is compiled to a css file which is what we'll link to our html file
+
+
+in order to use custom bootstrap, we will customize our bootstrap.scss which will be compiled to css and we'll use it in our html file
+
+
+the recommended project structure is that you dont tamper with the original bootstrap code. create your separate scss files and link it to the original bootstrap code
+
+
+make sure to reference the correct file path as you will be in a different folder
+
+
+@import "../bootstrap/scss/bootstrap";
+
+
+we will also need so specify where we want our custom code compiled to. you can create a separate css folder
+
+
+
+we will customize our code before the import statement in our scss file
+
+
+
+
+$theme-colors: {
+    "primary": #0074d9;
+    "secondary": #54859d;
+}
 
 
 
